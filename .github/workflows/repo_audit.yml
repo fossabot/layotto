@@ -1,29 +1,15 @@
-name: Audit Pull
+# SPDX-FileCopyrightText: 2022 Free Software Foundation Europe e.V. <https://fsfe.org>
+#
+# SPDX-License-Identifier: CC0-1.0
 
-on:
-  push:
-    branches:
-      - main
+name: REUSE Compliance Check
+
+on: [push, pull_request]
 
 jobs:
-  setup_audit:
-    name: SetupAudit
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Reposaur
-        uses: reposaur/setup-reposaur@main
-
-      - name: Execute Policies
-        run: |
-          echo "${{ github.event }}" \
-          | jq -r '.pull_request' \
-          | rsr exec > report.sarif
-        env:
-          GITHUB_TOKEN: ${{ github.TOKEN }}
-
-      - name: Upload Report
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: report.sarif
-          category: reposaur
-          
+      - uses: actions/checkout@v4
+      - name: REUSE Compliance Check
+        uses: fsfe/reuse-action@v4
