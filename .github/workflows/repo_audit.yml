@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Policy Library
-        uses: actions/checkout
+        uses: actions/checkout@v3
         with:
           repository: reposaur/policy
 
