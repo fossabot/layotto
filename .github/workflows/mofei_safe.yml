@@ -7,10 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: MurphySec code scan
-        uses: murphysecurity/actions@v1
-        with:
-          MURPHYSEC_TOKEN: 2124eb68081c941a2fdc32b98a531472
       - name: Checkout_Actions
         uses: actions/checkout@v3
       - name: Install MurphySec code scan cli
