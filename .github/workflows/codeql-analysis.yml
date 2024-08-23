@@ -1,11 +1,14 @@
 name: Layotto Env Pipeline 🌊
 
 on:
-  schedule:
-    - cron: '0 4 * * 5'
-
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
-  analyse:
+  check:
     name: CodeQL
     runs-on: ubuntu-latest
 
