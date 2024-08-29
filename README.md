@@ -4,6 +4,7 @@
 
 [![Layotto Env Pipeline 🌊](https://github.com/mosn/layotto/actions/workflows/proto-checker.yml/badge.svg)](https://github.com/mosn/layotto/actions/workflows/quickstart-checker.yml)
 [![Layotto Dev Pipeline 🌊](https://github.com/mosn/layotto/actions/workflows/layotto-ci.yml/badge.svg)](https://github.com/mosn/layotto/actions/workflows/layotto-ci.yml)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F15669072513%2Flayotto.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F15669072513%2Flayotto?ref=badge_shield)
 
 [![GoDoc](https://godoc.org/mosn.io/layotto?status.svg)](https://godoc.org/mosn.io/layotto)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mosn/layotto)](https://goreportcard.com/report/mosn.io/layotto)
@@ -177,3 +178,7 @@ Thank y'all!
 dapr is an excellent Runtime product, but it lacks the ability of Service Mesh, which is necessary for the Runtime
 product used in production environment, so we hope to combine Runtime with Service Mesh into one sidecar to meet
 more complex production requirements.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F15669072513%2Flayotto.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F15669072513%2Flayotto?ref=badge_large)
